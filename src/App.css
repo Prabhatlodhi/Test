@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Bg_Image {
+  width: 100vw;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TableMain {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.formINput {
+  text-align: center;
+  margin-top: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  border-radius: 50px 0px 0px 50px;
+  height: 30px;
+  width: 350px;
+  padding-left: 30px;
+}
+
+.submitButton {
+  border-radius: 0px 50px 50px 0px;
+  height: 30px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  text-align: left;
+}
+
+.hot-temperature {
+  color: #FF5733;
+}
+
+.cold-temperature {
+  color: #64CFF7;
+}
+
+.temperature-icon::before {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.hot-temperature .temperature-icon::before {
+  content: "\2600";
+}
+
+.cold-temperature .temperature-icon::before {
+  content: "\2744";
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.input {
+  border-radius: 50px;
+  height: 40px;
+  width: 300px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.submitButton {
+  border-radius: 50px;
+  height: 40px;
+  width: 80px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0 20px; /* Add padding to the table */
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Align column data in the middle */
 }
